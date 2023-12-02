@@ -1,0 +1,5 @@
+<app-cover [productNames]="productNames" [products]="products" [reviewLength]="((productReview.length/1000).toFixed(1)).toString()"></app-cover>
+<app-available-web-pages></app-available-web-pages>
+<app-what-offers [productPolarity]="productPolarity" [productReview]="productReview" [products]="products"></app-what-offers>
+<app-customer-review [productReview]="productReviewByProductId" [products]="products"></app-customer-review>
+

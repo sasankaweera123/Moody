@@ -1,0 +1,27 @@
+<div class="customer-details">
+  <i class="fa fa-user pb-3"></i>
+  <h1>{{customerReviewDetails.productComment}}</h1>
+  <p>{{customerReviewDetails.productName}}</p>
+  <div class="star-rating me-2">
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 1 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 2 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 3 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 4 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating == 5 }"></span>
+  </div>
+  <div class="website-logo mt-4">
+    <a href="https://www.amazon.com/">
+      <img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png" alt="" srcset="" width="100px">
+    </a>
+    <a href="https://www.ebay.com/">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/EBay_logo.png" alt="" srcset="" width="100px">
+    </a>
+    <a href="https://www.wish.com/">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wish_logo.svg/2560px-Wish_logo.svg.png" alt="" srcset="" width="100px">
+    </a>
+    <a href="https://www.aliexpress.com/">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/2560px-Aliexpress_logo.svg.png" alt="" srcset="" width="100px">
+    </a>
+  </div>
+</div>
+

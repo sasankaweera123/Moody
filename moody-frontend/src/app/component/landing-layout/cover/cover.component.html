@@ -1,0 +1,31 @@
+<div class="container cover-details pt-5">
+<div class="cover-left-side">
+  <h1>Discover Product Feelings</h1>
+  <p>Prepare for a sentiment-exploration extravaganza, where we unravel the emotional roller coaster surrounding the product and discover whether it's swimming in a sea of positivity or sailing through stormy clouds of negativity!</p>
+  <form (ngSubmit)="onSubmit()">
+    <div class="input-group">
+      <input #productInput type="text" class="form-control" placeholder="Try iPhone Xs, iPhone SE etc." aria-label="Enter Product Name" aria-describedby="button-addon2" name="product" [(ngModel)]="selectedProduct" (input)="onSearch()">
+    </div>
+  </form>
+  <ul *ngIf="selectedProduct && filteredProducts.length > 0">
+    <li *ngFor="let product of filteredProducts.slice(0, 5)" (click)="onProductSelect(product)">{{ product}}</li>
+  </ul>
+  <h5 class="mt-4">Developed by Sasa</h5>
+  <div class="rating-details">
+    <div class="star-rating me-2">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <h5 class="me-2">4.1/5</h5>
+    <p>( {{reviewLength}}k reviews )</p>
+  </div>
+</div>
+<div class="cover-right-side">
+  <img src="https://freepngimg.com/download/blushing_emoji/36999-5-blushing-emoji-file.png" alt="" srcset="" width="300px">
+</div>
+</div>
+
+

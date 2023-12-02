@@ -1,0 +1,9 @@
+<div class="product-card">
+  <a href="{{product.productLink}}">
+  <img [src]="product.imageUrl" alt="{{ product.productName }}" (error)="onImageError($event)">
+  </a>
+  <div class="product-details">
+    <h2>{{ product.productName }}</h2>
+    <button (click)="navigateToProduct(product.id)" class="btn btn-outline-warning">View Details</button>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.footer-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.project-details{
+  width: 50%;
+}
+
+.footer-text{
+  width: 50%;
+}
+
+.social-media-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+h4{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+p{
+  font-size: 11px;
+  font-weight: 300;
+}
+
+a{
+  font-size: 11px;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

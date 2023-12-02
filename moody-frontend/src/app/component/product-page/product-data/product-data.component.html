@@ -1,0 +1,31 @@
+<div class = "container product-page-details">
+  <div class = "row">
+    <div class = "col-md-6 p-3 product-image">
+      <div>
+        <img src = "{{productDetails.imageUrl}}" alt = "{{productDetails.productName}}" (error)="onImageError($event)" >
+      </div>
+    </div>
+    <div class = "col-md-6 p-3">
+      <div class = "product-details">
+        <h2 class="pb-4">{{productDetails.productName}}</h2>
+        <div class="product-polarity">
+          <div class="polarity-item polarity">
+            <h3>{{productDetails.polarity}}</h3>
+            <p>Polarity</p>
+          </div>
+          <div class="polarity-item subjectivity">
+            <h3>{{productDetails.subjectivity}}</h3>
+            <p>Subjectivity</p>
+          </div>
+          <div class="polarity-item review-count">
+            <h3>{{productDetails.reviewCount}}</h3>
+            <p>Review Count</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="review-text" *ngFor="let review of productDetails.review"><p>{{ review }}<p></p></div>
+    </div>
+  </div>
+</div>
